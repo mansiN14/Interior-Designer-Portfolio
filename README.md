@@ -20,14 +20,14 @@ This is a personal portfolio website for showcasing interior design projects. Th
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-
+   git clone https://github.com/mansiN14/Interior-Designer-Portfolio/tree/main
+   
   2. Navigate to the Project Directory:
 **Clone the Repository**:
    ```bash
-cd your-repo-name
+cd Interior-Designer-Portfolio
 
-3.Open index.html in Your Browser to view the portfolio.
+3.Open index.html in Your Browser to view the portfolio:
 
 Home Page: Overview of the portfolio.
 
