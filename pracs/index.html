@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interior Designer Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>    
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a></li>
+        <a href="#projects">Projects</a></li>
+        <a href="#testimonials">Testimonials</a></li>
+        <a href="#contact">Contact</a></li>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Browny</h1>
+        <p>Interior Designer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Specialize in creating beautiful and functional spaces that reflect our clients' personal style. Explore the work below!</p>
+        <p>Welcome to my interior design portfolio, where creativity meets functionality. With a passion for transforming spaces into reflections of personal style, I specialize in crafting interiors that are both aesthetically pleasing and practical. My approach blends modern design principles with timeless elegance, ensuring each project is tailored to meet the unique needs and tastes of my clients. From cozy living rooms to sophisticated kitchens, my work showcases a commitment to quality, attention to detail, and a love for creating spaces that inspire and uplift.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project" onclick="openModal('modal1')">
+                <img src="C:\Users\kavita\Downloads\design4.webp" alt="Project 1">
+                <div class="overlay">
+                    <h3>Living Room</h3>
+                    <p>A sleek and traditional living room design.</p>
+                </div>
+            </div>
+            <div class="project" onclick="openModal('modal2')">
+                <img src="C:\Users\kavita\Downloads\desgg7.jpg" alt="Project 2">
+                <div class="overlay">
+                    <h3>Modern Living Room</h3>
+                    <p>A modern and inviting living room</p>
+                </div>
+            </div>
+            <div class="project" onclick="openModal('modal3')">
+                <img src="C:\Users\kavita\Downloads\dsg8.jpg" alt="Project 3">
+                <div class="overlay">
+                    <h3>Elegant Kitchen</h3>
+                    <p>A sophisticated kitchen with a modern touch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Modern Living Room</h2>
+            <p>In this modern living room design, I’ve focused on creating a space that is both functional and stylish. The clean lines and neutral color palette provide a timeless backdrop, allowing for flexibility in decor and personal touches. I’ve chosen furniture that balances comfort with contemporary design, ensuring the room is inviting while maintaining a sleek, minimalist look. Natural light plays a significant role in this space, so I’ve integrated large windows and strategically placed lighting to enhance the room's brightness and ambiance. The materials—like glass, metal, and wood—are carefully selected to add texture and warmth without overwhelming the simplicity of the design.</p>
+            <img src="C:\Users\kavita\Downloads\design4.webp" height="100%" width="100%" position="relative">
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Cozy Bedroom</h2>
+            <p>Discover our modern living room designs that combine comfort with contemporary elegance. These spaces feature clean lines, neutral tones, and thoughtful layouts, creating an inviting atmosphere for relaxation and entertainment.</p>
+            <img src="C:\Users\kavita\Downloads\desgg7.jpg" height="100%" width="100%" position="relative">
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Elegant Kitchen</h2>
+            <p>Explore our kitchen designs that blend functionality with style. From sleek modern layouts to warm, inviting spaces, each kitchen is crafted to inspire and enhance your culinary experience</p>
+            <img src="C:\Users\kavita\Downloads\dsg8.jpg" height="100%" width="100%" position="relative">
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Browny transformed our home into a sanctuary.Their eye for detail is unmatched!"</p>
+                <h4>- Client A</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Her designs are both functional and beautiful. I couldn't be happier!"</p>
+                <h4>- Client B</h4>
+            </div>
+            <div class="testimonial">
+                <p>I love her work</p>
+                <h4>- Client C</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+    
+    <!-- Contact Number -->
+    <p>Phone: <a href="tel:+917021196324">+91 7021196324</a></p>
+    
+    <a href="C:\Users\kavita\Downloads\manasiNRes (1).pdf" class="contact-button" target="_blank">Get in Touch</a>
+    
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2024 Browny. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling and Modal -->
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Modal Functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
